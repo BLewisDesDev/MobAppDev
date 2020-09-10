@@ -19,4 +19,16 @@ public class Friend {
         address = ad;
         counter++;
     }
+
+    @Override
+    public String toString() {
+        return "Friend{" +
+                "f_id=" + f_id +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", gender='" + gender + '\'' +
+                ", age=" + age +
+                ", address='" + address + '\'' +
+                '}';
+    }
 }
