@@ -1,6 +1,8 @@
 package com.example.ass2;
 
-public class Task {
+import java.io.Serializable;
+
+public class Task implements Serializable {
 
     static int counter = 0;
     int t_id;
@@ -16,21 +18,21 @@ public class Task {
         counter++;
     }
 
-    @Override
-    public String toString() {
-        return "Task{" +
-                "t_id=" + t_id +
-                ", taskName='" + taskName + '\'' +
-                ", location='" + location + '\'' +
-                ", status=" + status +
-                '}';
-    }
+//    @Override
+//    public String toString() {
+//        return "Task{" +
+//                "t_id=" + t_id +
+//                ", taskName='" + taskName + '\'' +
+//                ", location='" + location + '\'' +
+//                ", status=" + status +
+//                '}';
+//    }
 
     public String getTaskName() {
-        return taskName;
+        return taskName + " ";
     }
 
     public String getLocation() {
-        return location;
+        return location + " ";
     }
 }
