@@ -9,10 +9,28 @@ public class Task {
     boolean status;
 
     public Task(String tn, String l){
-        t_id = counter;
-        taskName = tn;
-        location = l;
-        status = false;
+        this.t_id = counter;
+        this.taskName = tn;
+        this.location = l;
+        this.status = false;
         counter++;
+    }
+
+    @Override
+    public String toString() {
+        return "Task{" +
+                "t_id=" + t_id +
+                ", taskName='" + taskName + '\'' +
+                ", location='" + location + '\'' +
+                ", status=" + status +
+                '}';
+    }
+
+    public String getTaskName() {
+        return taskName;
+    }
+
+    public String getLocation() {
+        return location;
     }
 }
