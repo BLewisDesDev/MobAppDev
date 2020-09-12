@@ -11,12 +11,12 @@ public class Friend {
     String address;
 
     public Friend (String fn, String ln, String g, int a, String ad){
-        f_id = counter;
-        firstName = fn;
-        lastName = ln;
-        gender = g;
-        age = a;
-        address = ad;
+        this.f_id = counter;
+        this.firstName = fn;
+        this.lastName = ln;
+        this.gender = g;
+        this.age = a;
+        this.address = ad;
         counter++;
     }
 

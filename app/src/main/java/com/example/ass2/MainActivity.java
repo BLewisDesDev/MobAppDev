@@ -45,6 +45,9 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
+
+        Friend f = new Friend("Byron", "Lewis", "Male", 30, "51 pelsart");
+        System.out.println(f.toString());
     }
 
     @Override

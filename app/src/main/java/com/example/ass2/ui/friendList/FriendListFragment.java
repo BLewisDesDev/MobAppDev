@@ -16,6 +16,9 @@ import androidx.lifecycle.ViewModelProviders;
 
 import com.example.ass2.Friend;
 import com.example.ass2.R;
+import com.example.ass2.friendAdaptor;
+
+import java.util.ArrayList;
 
 public class FriendListFragment extends Fragment {
 
@@ -23,35 +26,32 @@ public class FriendListFragment extends Fragment {
     }
 
     ListView friendList;
-    String[] vals = {"1sadasdasd", "2asdasdasd", "3asdasda", "asdasdasd4","1sadasdasd", "2asdasdasd", "3asdasda", "asdasdasd4","1sadasdasd", "2asdasdasd", "3asdasda", "asdasdasd4","1sadasdasd", "2asdasdasd", "3asdasda", "asdasdasd4"};
-    Friend[] friends;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
 
         View root = inflater.inflate(R.layout.fragment_friend_list, container, false);
 
-//        friendList = (ListView)root.findViewById(R.id.friend_list);
-//        ArrayAdapter<String> friendListAdaptor = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_list_item_1, vals);
-//        friendList.setAdapter(friendListAdaptor);
-
-        friendList = (ListView)root.findViewById(R.id.friend_list);
-        ArrayAdapter<String> friendListAdaptor = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_list_item_1, vals);
-        friendList.setAdapter(friendListAdaptor);
+        ArrayList<Friend> friendsArray = new ArrayList<Friend>();
 
         Friend F = new Friend("A", "G", "M", 10, "S");
-        Friend R = new Friend("B", "H", "N", 10, "T");
+        Friend r = new Friend("B", "H", "N", 10, "T");
         Friend I = new Friend("C", "I", "O", 10, "U");
         Friend E = new Friend("D", "J", "P", 10, "V");
         Friend N = new Friend("E", "K", "Q", 10, "W");
         Friend D = new Friend("F", "L", "R", 10, "X");
 
-        friends[0] = F;
-        friends[1] = R;
-        friends[2] = I;
-        friends[3] = E;
-        friends[4] = N;
-        friends[5] = D;
+        friendsArray.add(F);
+        friendsArray.add(r);
+        friendsArray.add(I);
+        friendsArray.add(E);
+        friendsArray.add(N);
+        friendsArray.add(D);
+
+        friendAdaptor adapter = new friendAdaptor(getActivity(), friendsArray);
+        friendList = (ListView)root.findViewById(R.id.friend_list);
+        friendList.setAdapter(adapter);
+
 
         return root;
     }
