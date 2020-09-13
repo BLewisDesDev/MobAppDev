@@ -11,12 +11,6 @@
         android:label="@string/menu_home"
         tools:layout="@layout/fragment_home" />
 
-<!--    <fragment-->
-<!--        android:id="@+id/edit_friend"-->
-<!--        android:name="com.example.ass2.ui.editFriend.EditFriendFragment"-->
-<!--        android:label="edit friend"-->
-<!--        tools:layout="@layout/fragment_edit_friend" />-->
-
     <fragment
         android:id="@+id/nav_friend_list"
         android:name="com.example.ass2.ui.friendList.FriendListFragment"

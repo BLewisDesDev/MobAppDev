@@ -53,10 +53,20 @@ public class FriendListFragment extends Fragment {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
                 Friend f = (Friend)friendList.getAdapter().getItem(position);
-                Toast.makeText(getContext(), "Editing: " + f.getFirstName()  + f.getLastName(), Toast.LENGTH_SHORT).show();
+                String fn = f.getFirstName();
+                String ln = f.getLastName();
+                String g = f.getGender();
+                String a = f.getAddress();
+                int age = f.getAge();
 
                 Intent intent = new Intent(getContext(), EditFriend.class);
-                intent.putExtra("Friend", f);
+
+                intent.putExtra("FirstName", fn);
+                intent.putExtra("LastName", ln);
+                intent.putExtra("Gender", g);
+                intent.putExtra("Address", a);
+                intent.putExtra("Age", age);
+
                 startActivity(intent);
             }
         });

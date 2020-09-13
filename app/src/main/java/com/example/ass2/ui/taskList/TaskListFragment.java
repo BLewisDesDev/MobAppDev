@@ -29,12 +29,12 @@ public class TaskListFragment extends Fragment {
 
         ArrayList<Task> taskArray = new ArrayList<Task>();
 
-        Task T = new Task("Do stuff" , "Here");
-        Task a = new Task("Do stuff" , "Here");
-        Task s = new Task("Do stuff" , "Here");
-        Task k = new Task("Do stuff" , "Here");
+        Task t = new Task("Study" , "Library");
+        Task a = new Task("Eat" , "Grilld");
+        Task s = new Task("Run" , "Gym");
+        Task k = new Task("Sleep" , "Home");
 
-        taskArray.add(T);
+        taskArray.add(t);
         taskArray.add(a);
         taskArray.add(s);
         taskArray.add(k);
@@ -46,14 +46,13 @@ public class TaskListFragment extends Fragment {
         taskList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
                 Task t = (Task)taskList.getAdapter().getItem(position);
-                String loc = t.getLocation();
-                String tas = t.getTaskName();
-                Toast.makeText(getContext(), "Editing: " + loc  + tas, Toast.LENGTH_SHORT).show();
-                Intent intent1 = new Intent(getContext(), EditTask.class);
-                intent1.putExtra("Task Name", tas);
-                intent1.putExtra("Location", loc);
-//                startActivity(intent1);
+
+                Toast.makeText(getContext(),"Editing:" + t.getLocation() + t.getTaskName(),Toast.LENGTH_SHORT).show();
+
+                Intent intent = new Intent(getContext(), EditTask.class);
+                startActivity(intent);
             }
         });
 
