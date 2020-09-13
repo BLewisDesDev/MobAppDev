@@ -9,12 +9,13 @@ public class Task implements Serializable {
     String taskName;
     String location;
     boolean status;
+    boolean stats;
 
     public Task(String tn, String l){
         this.t_id = counter;
         this.taskName = tn;
         this.location = l;
-        this.status = false;
+        this.stats = false;
         counter++;
     }
 
@@ -35,4 +36,8 @@ public class Task implements Serializable {
     public String getLocation() {
         return location + " ";
     }
+
+    public Boolean getStatus() {return status;}
+
+
 }

@@ -13,7 +13,6 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
 import com.example.ass2.EditFriend;
-import com.example.ass2.ui.editFriend.EditFriendFragment;
 import com.example.ass2.Friend;
 import com.example.ass2.R;
 
@@ -42,6 +41,7 @@ public class FriendListFragment extends Fragment {
         friendsArray.add(I);
         friendsArray.add(E);
         friendsArray.add(N);
+
         friendsArray.add(D);
 
         friendAdaptor adapter = new friendAdaptor(getActivity(), friendsArray);
