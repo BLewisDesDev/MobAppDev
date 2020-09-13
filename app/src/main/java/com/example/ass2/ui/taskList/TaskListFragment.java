@@ -48,10 +48,13 @@ public class TaskListFragment extends Fragment {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
                 Task t = (Task)taskList.getAdapter().getItem(position);
-
-                Toast.makeText(getContext(),"Editing:" + t.getLocation() + t.getTaskName(),Toast.LENGTH_SHORT).show();
+//                Toast.makeText(getContext(),"Editing:" + t.getLocation() + t.getTaskName(),Toast.LENGTH_SHORT).show();
+                String tn = t.getTaskName();
+                String loc = t.getLocation();
 
                 Intent intent = new Intent(getContext(), EditTask.class);
+                intent.putExtra("TaskName", tn);
+                intent.putExtra("Location", loc);
                 startActivity(intent);
             }
         });
