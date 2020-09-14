@@ -6,6 +6,7 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="debug" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
@@ -17,10 +18,14 @@
       <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/ass2/DatabaseManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ass2/DatabaseManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/ass2/EditFriend.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ass2/EditFriend.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/ass2/Friend.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ass2/Friend.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/ass2/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ass2/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/ass2/ui/friendList/FriendListFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ass2/ui/friendList/FriendListFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_edit_friend.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_edit_friend.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,22 +180,22 @@
       <screen x="0" y="23" width="1280" height="726" />
     </state>
     <state x="228" y="148" key="AndroidCreateResourceFileDialog/0.23.1280.726@0.23.1280.726" timestamp="1599977244347" />
-    <state width="1238" height="138" key="GridCell.Tab.0.bottom" timestamp="1599879720979">
+    <state width="1238" height="174" key="GridCell.Tab.0.bottom" timestamp="1600053922243">
       <screen x="0" y="23" width="1280" height="726" />
     </state>
-    <state width="1238" height="138" key="GridCell.Tab.0.bottom/0.23.1280.726@0.23.1280.726" timestamp="1599879720979" />
-    <state width="1238" height="138" key="GridCell.Tab.0.center" timestamp="1599879720978">
+    <state width="1238" height="174" key="GridCell.Tab.0.bottom/0.23.1280.726@0.23.1280.726" timestamp="1600053922243" />
+    <state width="1238" height="174" key="GridCell.Tab.0.center" timestamp="1600053922242">
       <screen x="0" y="23" width="1280" height="726" />
     </state>
-    <state width="1238" height="138" key="GridCell.Tab.0.center/0.23.1280.726@0.23.1280.726" timestamp="1599879720978" />
-    <state width="1238" height="138" key="GridCell.Tab.0.left" timestamp="1599879720978">
+    <state width="1238" height="174" key="GridCell.Tab.0.center/0.23.1280.726@0.23.1280.726" timestamp="1600053922242" />
+    <state width="1238" height="174" key="GridCell.Tab.0.left" timestamp="1600053922242">
       <screen x="0" y="23" width="1280" height="726" />
     </state>
-    <state width="1238" height="138" key="GridCell.Tab.0.left/0.23.1280.726@0.23.1280.726" timestamp="1599879720978" />
-    <state width="1238" height="138" key="GridCell.Tab.0.right" timestamp="1599879720979">
+    <state width="1238" height="174" key="GridCell.Tab.0.left/0.23.1280.726@0.23.1280.726" timestamp="1600053922242" />
+    <state width="1238" height="174" key="GridCell.Tab.0.right" timestamp="1600053922243">
       <screen x="0" y="23" width="1280" height="726" />
     </state>
-    <state width="1238" height="138" key="GridCell.Tab.0.right/0.23.1280.726@0.23.1280.726" timestamp="1599879720979" />
+    <state width="1238" height="174" key="GridCell.Tab.0.right/0.23.1280.726@0.23.1280.726" timestamp="1600053922243" />
     <state x="141" y="25" key="SettingsEditor" timestamp="1599724991889">
       <screen x="0" y="23" width="1280" height="726" />
     </state>
@@ -199,9 +204,9 @@
       <screen x="0" y="23" width="1280" height="726" />
     </state>
     <state x="417" y="171" key="chooseDestDirectoryDialog/0.23.1280.726@0.23.1280.726" timestamp="1599882936122" />
-    <state x="310" y="218" key="com.intellij.ide.util.TipDialog" timestamp="1599877684422">
+    <state x="310" y="218" key="com.intellij.ide.util.TipDialog" timestamp="1600052769402">
       <screen x="0" y="23" width="1280" height="726" />
     </state>
-    <state x="310" y="218" key="com.intellij.ide.util.TipDialog/0.23.1280.726@0.23.1280.726" timestamp="1599877684422" />
+    <state x="310" y="218" key="com.intellij.ide.util.TipDialog/0.23.1280.726@0.23.1280.726" timestamp="1600052769402" />
   </component>
 </project>

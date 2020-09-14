@@ -15,6 +15,8 @@ public class DatabaseManager {
 
     private static final String CREATE_TABLE = "CREATE TABLE " + DB_TABLE + " (f_id INTEGER, first_name TEXT, last_name TEXT, gender TEXT, age INTEGER, address TEXT);";
 
+//    private static final String DELETE_ROW = "DELETE FROM " + DB_TABLE + " WHERE id = ";
+
     private SQLHelper helper;
     private SQLiteDatabase db;
     private Context context;
@@ -86,6 +88,19 @@ public class DatabaseManager {
     {
         db = helper.getWritableDatabase();
         db.delete(DB_TABLE, null, null);
+    }
+
+    //Not sure if this works lol
+    public void deleteRow(int id)
+    {
+        try {
+            String selection = "f_id" + " LIKE ?";
+            String[] selectionArgs = { Integer.toString(id) };
+            int deletedRows = db.delete(DB_TABLE, selection, selectionArgs);
+        } catch (Exception e) {
+            Log.e("Error in inserting rows", e.toString());
+            e.printStackTrace();
+        }
     }
 
     public class SQLHelper extends SQLiteOpenHelper {

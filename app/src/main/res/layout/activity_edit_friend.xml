@@ -156,14 +156,16 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_marginRight="10dp"
-                android:text="Save" />
+                android:text="Save"
+                android:onClick="save"/>
             <Button
                 android:id="@+id/delete_friend"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Delete"
-                android:layout_marginLeft="10dp"/>
+                android:layout_marginLeft="10dp"
+                android:onClick="delete"/>
         </LinearLayout>
     </LinearLayout>
 

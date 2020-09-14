@@ -53,4 +53,8 @@ public class Friend implements Serializable {
     public String getAddress() {
         return address + " ";
     }
+
+    public int getId() {
+        return f_id;
+    }
 }
